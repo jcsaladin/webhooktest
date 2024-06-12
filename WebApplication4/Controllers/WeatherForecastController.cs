@@ -8,7 +8,7 @@ namespace WebApplication4.Controllers
     {
         private static readonly string[] Summaries = new[]
         {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering"
+            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching", "Changing for the Good", "Another Change"
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
@@ -16,6 +16,7 @@ namespace WebApplication4.Controllers
         public WeatherForecastController(ILogger<WeatherForecastController> logger)
         {
             _logger = logger;
+            //test
         }
 
         [HttpGet(Name = "GetWeatherForecast")]
